@@ -17,9 +17,10 @@
         <!-- make menu -->
         <div class="position-relative ">
             <div class="row m-0">
-                <div class="col-12">
+                <!-- menu in xxl xl lg -->
+                <div class="col-12 d-xxl-block d-xl-block d-lg-block d-md-none d-sm-none d-none">
                     <!-- Navbar -->
-                            <nav class="navbar navbar-expand-lg navbar-light shadow-0 me-3">
+                            <nav class="navbar navbar-expand-md navbar-light shadow-0 me-3">
                                 <!-- Container wrapper -->
                                 <div class="container-fluid">
                                 <!-- Toggle button -->
@@ -42,38 +43,65 @@
                                     <a class="navbar-brand mt-2 mt-lg-0" href="#">
                                     <img
                                         src="./images/logo.png"
-                                        height="15"
+                                        height="20"
                                         alt="microsoft Logo"
                                         loading="lazy"
                                     />
                                     </a>
                                     <!-- Left links -->
-                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0  d-i " >
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Microsoft 365</a>
+                                        <a class="nav-link text-black " href="#">Microsoft 365</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Team</a>
+                                        <a class="nav-link text-black" href="#">Team</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Windows</a>
+                                        <a class="nav-link text-black" href="#">Windows</a>
                                     </li>
                                     
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Surface</a>
+                                        <a class="nav-link text-black" href="#">Surface</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Xbox</a>
+                                        <a class="nav-link text-black" href="#">Xbox</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Sonderangebote</a>
+                                        <a class="nav-link d-xxl-flex d-xl-flex d-lg-none d-sm-none d-md-none text-black " href="#">Sonderangebote</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Kleine Unternehmen</a>
+                                        <a class="nav-link d-xxl-flex d-xl-flex d-lg-none d-sm-none d-md-none text-black" href="#">Kleine Unternehmen</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Support</a>
+                                        <a class="nav-link d-xxl-flex d-xl-flex d-lg-none d-sm-none d-md-none text-black" href="#">Support</a>
                                     </li>
+                                    
+                                    <li class="nav-item">
+                                            <div class="dropdown d-xxl-none d-xl-none d-flex ">
+                                                <a class="nav-link dropdown-toggle text-black text-capitalize " href="#" role="button"  data-toggle="dropdown" 
+                                                id="navbarDropdownMenuAvatar" data-mdb-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false" >
+                                                more
+                                                </a>
+                                            <ul
+                                                class="show-menu dropdown-menu dropdown-menu-start bg-light " style="width: 200px;"
+                                                aria-labelledby="navbarDropdownMenuAvatar"
+                                            >
+                                            
+                                                 <li class="nav-item  " style="height: 40px; text-align: center;line-height: 40px; ">
+                                                    <a href="#" class="text-black ">Sonderangebote </a>
+                                                 </li>
+                                                 <li class="nav-item text-capitalize lh-[40px] h-[40px] text-center" style="height: 40px; text-align: center;line-height: 40px; ">
+                                                    <a href="#" class="text-black">Kleine Unternehmen </a>
+                                                 </li>
+                                                 <li class="nav-item text-capitalize lh-[40px] h-[40px] text-center" style="height: 40px;line-height: 40px;">
+                                                    <a href="#" class="text-black"> Support</a>
+                                                 </li>
+                                            </ul>
+                                            </div>
+                                    </li>
+
+
                                     </ul>
                                     <!-- Left links -->
                                 </div>
@@ -83,15 +111,17 @@
                                 <div class="d-flex align-items-center">
                                     <!-- Icon -->
 
-
+                                        <div class="menu_allmicrosoft btn btn-white  dropdown-toggle">
+                                            <a href="#" class="text-black">Alles von Microsoft</a>
+                                        </div>
                                     
-                                        <div class="dropdown">
+                                        <!-- <div class="menu_allmicrosoft dropdown">
                                             <a class="btn btn-light  dropdown-toggle" href="#" role="button"  data-toggle="dropdown" 
                                             id="navbarDropdownMenuAvatar" data-mdb-toggle="dropdown"
                                             aria-haspopup="true" aria-expanded="false">
                                             Alles von Microsoft
-                                              </a>
-                                        <ul
+                                              </a> -->
+                                        <!-- <ul
                                             class="show-menu dropdown-menu dropdown-menu-end "
                                             aria-labelledby="navbarDropdownMenuAvatar"
                                         >
@@ -220,10 +250,10 @@
                                         </div>
                                         
 
-                                         </ul>
-                                        </div>
+                                         </ul> -->
+                                        <!-- </div> -->
                                     </div>
-                                    <a class="text-reset me-3" href="#">
+                                    <a class="larg-menu-search text-reset me-3" href="#">
                                         <i class="fa-solid fa-magnifying-glass"></i>
                                     </a>
 
@@ -244,293 +274,623 @@
                             <!-- Navbar -->
                 </div>
 
-            </div>
-        </div>
-    </div>
-    <div class="dropdown">
-        <!-- <button
-          class="btn btn-light  dropdown-toggle"
-          type="button"
-          id="dropdownMenuButton"
-          data-mdb-toggle="dropdown"
-          aria-expanded="false"
-        >
-        Alles von Microsoft
-        </button> -->
-            <div class="dropdown-menu" >
-            <div class="container-fluid">
-            <div class="row">
-                <div class="col-12 bg-light " style="z-index: 99999;">
-                        <div class="row m-0">
-                        <div class=" col-2  text-black   mx-auto " style="font-size: 12px;">
-                            <ul class="list-group list-group-light ">
-                                
-                                <li class="list-group-item border-0  bg-light">
-                                <h6 class="fw-bold " style="font-size: 12px;">Software</h6>
-                                </li>
-                                <li class="list-group-item border-0 bg-light"><a class="text-black" href="#">Windows-Apps</a></li>
-                                <li class="list-group-item border-0 bg-light"><a class="text-black" href="#">KI</a></li>
-                                <li class="list-group-item border-0 bg-light"><a class="text-black"
-                                    href="#">OneDrive</a></li>
-                                <li class="list-group-item border-0 bg-light"><a class="text-black"
-                                        href="#">Outlook</a></li>
-                                <li class="list-group-item border-0 bg-light"><a class="text-black"
-                                            href="#">Skype</a></li>
-                                <li class="list-group-item border-0 bg-light"><a class="text-black"
-                                                href="#">OneNote</a></li>
-                                <li class="list-group-item border-0 bg-light"><a class="text-black"
-                                                                href="#">OneNote</a></li>
-                                <li class="list-group-item border-0 bg-light"><a class="text-black"
-                                                href="#">Microsoft Teams</a></li>
+
+                <!-- menu in md sm -->
+                <div class="col-12 d-flex  h-[40px] justify-content-between d-xxl-none d-xl-none d-lg-none d-md-flex d-sm-flex my-2" style="height: 40px;">
+                    <div class="menu-small-bar col-4 bg-white" style="height: 40px; line-height: 40px;">
+
+                        <a  class="text-reset me-3" href="#">
+                            <span class="fas fa-bars"></span>
+                        </a>
+
+                        <a class="search-small text-reset " href="#">
+                            <span class="fa-solid fa-magnifying-glass"></span>
+                        </a>
+
+                    </div>
+                    
+                    <!-- menu small center -->
+                    <div class="menu-small-logo col-4  text-center"  style="height: 40px; line-height: 40px;">
+                        <a  href="#">
+                            <img
+                                src="./images/logo.png"
+                                height="20"
+                                alt="microsoft Logo"
+                                loading="lazy"
+                            />
+                            </a>
+                    </div>
+                    <!-- menu small right -->
+                    <div class="menu-small-user col-4 bg-white text-end " style="height: 40px; line-height: 40px;">
+                        <a class="text-reset me-3" href="#">
+                            <i class="fas fa-shopping-cart"></i>
+                            </a>
                             
-                            </ul>
-        
-                        
-                        </div>                                  
-                        <div class="col-2 d-flex flex-column flex-nowrap justify-content-start text-start  text-black mx-auto  " style="font-size: 12px;"  >
-                            <ul class="list-group list-group-light w-100" style="font-size: 12px;">
-                                
-                                <li class="list-group-item border-0  bg-light ">
-                                <h6 class="fw-bold " style="font-size: 12px;">PCs and devices</h6>
-                                </li>
-                                <li class="list-group-item border-0 bg-light"><a class="text-black" href="#">Buy Xbox</a></li>
-                                <li class="list-group-item border-0 bg-light"><a class="text-black" href="#">Accesories</a></li>
-                                <li class="list-group-item border-0 bg-light"><a class="text-black"
-                                    href="#">VR and mixed reality</a></li>
-                            </ul>
-        
-                        
-                        </div> 
-                        <div class="col-2 d-flex flex-column flex-nowrap  text-start  text-black  mx-auto" style="font-size: 12px;" >
-                            <ul class="list-group list-group-light" style="font-size: 12px;">
-                                
-                                <li class="list-group-item border-0  bg-light">
-                                <h6 class="fw-bold " style="font-size: 12px;">Entertainment</h6>
-                                </li>
-                                <li class="list-group-item border-0 bg-light"><a class="text-black" href="#">Xbox Game Pass Ultimate</a></li>
-                                <li class="list-group-item border-0 bg-light"><a class="text-black" href="#">Xbox LiveGold</a></li>
-                                <li class="list-group-item border-0 bg-light"><a class="text-black"
-                                    href="#">Xbox games</a></li>
-                                <li class="list-group-item border-0 bg-light"><a class="text-black"
-                                        href="#">PC Games</a></li>
-                                <li class="list-group-item border-0 bg-light"><a class="text-black"
-                                            href="#">Windows games</a></li>
-                                <li class="list-group-item border-0 bg-light"><a class="text-black"
-                                                href="#">Movies & TV</a></li>
                             
-                            </ul>
-        
-                        
-                        </div> 
-                        <div class="col-2 d-flex flex-column flex-nowrap  text-start  text-black mx-auto " style="font-size: 12px;">
-                            <ul class="list-group list-group-light">
-                                
-                                <li class="list-group-item border-0  bg-light">
-                                <h6 class="fw-bold " style="font-size: 12px;">Pursue</h6>
-                                </li>
-                                <li class="list-group-item border-0 bg-light"><a class="text-black" href="#">Microsoft cloud</a></li>
-                                <li class="list-group-item border-0 bg-light"><a class="text-black" href="#">Microsoft Security</a></li>
-                                <li class="list-group-item border-0 bg-light"><a class="text-black"
-                                    href="#">Azure</a></li>
-                                <li class="list-group-item border-0 bg-light"><a class="text-black"
-                                        href="#">Dynamics 365</a></li>
-                                <li class="list-group-item border-0 bg-light"><a class="text-black"
-                                            href="#">Microsoft 365 for Business</a></li>
-                                <li class="list-group-item border-0 bg-light"><a class="text-black"
-                                                href="#">Microsoft Industries</a></li>
-                            
-                            </ul>
-        
-                        
-                        </div> 
-                        <div class="col-2 d-flex flex-column flex-nowrap  text-start  text-black  mx-auto" style="font-size: 12px;">
-                            <ul class="list-group list-group-light bg-light">
-                                
-                                <li class="list-group-item border-0  bg-light">
-                                <h6 class="fw-bold "style="font-size: 12px;" >Developers & IT</h6>
-                                </li>
-                                <li class="list-group-item border-0 bg-light"><a class="text-black" href="#">Developer Center</a></li>
-                                <li class="list-group-item border-0 bg-light"><a class="text-black" href="#">documentation</a></li>
-                                <li class="list-group-item border-0 bg-light"><a class="text-black"
-                                    href="#">Microsoft Learn</a></li>
-                                <li class="list-group-item border-0 bg-light"><a class="text-black"
-                                        href="#">Microsoft Tech Community</a></li>
-                                <li class="list-group-item border-0 bg-light"><a class="text-black"
-                                            href="#">Azure Marketplace</a></li>
-                            
-                            </ul>
-        
-                        
-                        </div>
-                        <div class="col-2 d-flex flex-column flex-nowrap  text-start  text-black mx-auto " style="font-size: 12px;">
-                            <ul class="list-group list-group-light bg-light" >
-                                
-                                <li class="list-group-item border-0 bg-light " >
-                                <h6 class="fw-bold text-start " style="font-size: 12px;">More</h6>
-                                </li>
-                                <li class="list-group-item border-0 bg-light"><a class="text-black" href="#">Microsoft Rewards</a></li>
-                                <li class="list-group-item border-0 bg-light"><a class="text-black" href="#">Download center</a></li>
-                                <li class="list-group-item border-0 bg-light"><a class="text-black"
-                                    href="#">education</a></li>
-                                <li class="list-group-item border-0 bg-light"><a class="text-black"
-                                        href="#">gift cards</a></li>
-                                <li class="list-group-item border-0 bg-light"><a class="text-black"
-                                            href="#">Show sitemap</a></li>
-                            
-                            </ul>
-        
-                        
-                        </div>
-                        
-                       </div>
-        
-        
-        
+                            <a class="text-reset me-3" href="#">
+                                <i class="fa-solid fa-user-plus"></i>
+                            </a>
+                    </div>
+
+
+
                 </div>
-            </div>
-        </div>
-        
 
-    </div>
-
-
-    </div>
-  
-
- 
-    <!-- make slider -->
-    <div class="slider position-relative ">
-        <div class="row m-0">
-            <div class="col-12 px-5 ">
-                        <!-- Carousel wrapper -->
-<div id="carouselBasicExample" class="carousel slide carousel-fade" data-mdb-ride="carousel">
-<!-- Indicators -->
-<div class="carousel-indicators">
-  <button
-    type="button"
-    data-mdb-target="#carouselBasicExample"
-    data-mdb-slide-to="0"
-    class="active"
-    aria-current="true"
-    aria-label="Slide 1"
-  ></button>
-  <button
-    type="button"
-    data-mdb-target="#carouselBasicExample"
-    data-mdb-slide-to="1"
-    aria-label="Slide 2"
-  ></button>
-
-</div>
-
-<!-- Inner -->
-<div class="carousel-inner">
-  <!-- Single item -->
-  <div class="carousel-item active" >
-    <img src="./images/slide-1.jfif" class="d-block  w-100" alt="Sunset Over the City"/>
-            <div class="row m-0 d-flex flex-row justify-content-center">
-                <div class="col-6">
-                    <div class="card-img-overlay d-flex flex-column justify-content-center px-5 py-5 ">
-                        <h5 class="card-title  text-black fs-2">
-                            Secure spring offers now
-                        </h5>
-                        <p class="card-text mb-4 text-black ">Don't miss out on the spring offers. Only until April 20th. </p>
-                        <div class="d-flex flex-row flex-nowrap">
-                            <a href="#" class="btn btn-primary bg-info fw-bold">
-                                discover deals</a>
-                                
-                        </div>
+                
+                <div class="menu-small-search col-12 " style="display: none;" >
+                    <div class="row">
+                    <!-- <div class="col-1  ">
+                    <span class="btn fa-solid fa-arrow-left shadow-0 fs-5"></span>
+                    </div> -->
+                    <div class="col-12 position-relative my-2 ">
+                     <span class="position-absolute fa-solid fa-magnifying-glass " style="left: 3%; top: 5px;"></span>   
+                    <input type="search" placeholder="search on microsoft.com " class="w-100 border-2 border-primary ps-5" >
+                    </div>
                     </div>
                 </div>
-            </div>
-</div>
-  <!-- Single item -->
-  <div class="carousel-item" style="background-color: rgb(180,215,249);">
-    <img src="./images/slide-2.jpg" class="d-block w-100" alt="Canyon at Nigh"/>
 
-    <!-- <div class="carousel-caption d-none d-md-block text-black position-absolute  align-content-start" >
-
-        <div class="row">
-            <div class="col-6 align-content-start">
-                <h2>
-                    Microsoft 365
-                </h2>
-                <p>
-                    Realize ideas, enjoy more online security, keep an eye on the essentials: Microsoft 365 Apps.                                    
-                </p>
-                <div class="d-flex flex-row flex-nowrap">
-                    <a href="#" class="btn btn-primary">
-                        For 1 user</a>
-                        <a href="#" class="text-black">
-                            Up to 6 users
-                        </a>
-                </div>
             </div>
         </div>
-
-
-
-
-    </div> -->
-
-    <div class="row m-0 d-flex flex-row justify-content-center">
-        <div class="col-6">
-            <div class="card-img-overlay d-flex flex-column justify-content-center px-5 py-5 ">
-                <h5 class="card-title  text-black fs-2">
-                    Microsoft 365
-                 </h5>
-                <p class="card-text mb-4 text-black ">Realize ideas, enjoy more online security, keep an eye on </p>
-                <p class="card-text mb-4 text-black ">the essentials: Microsoft 365 Apps.</p> 
-                </p>
-                <div class="d-flex flex-row flex-nowrap fw-bold">
-                    <a href="#" class="btn btn-primary fw-bold">
-                        For 1 user</a>
-                        <a href="#" class=" btn  bg-image shadow-0 text-black fw-bold">
-                            Up to 6 users
-                        </a>
-                </div>
-              </div>
-        </div>
-       
     </div>
-  </div>
+    
+  
+    <div class="submenu row " style="display: none;" >
+        <div class="col-11 bg-light mx-auto position-absolute  " style="z-index: 99999; left: 4%;">
+                <div class="row m-0 ">
+                <div class=" col-2  text-black   " style="font-size: 12px;">
+                    <ul class="list-group list-group-light ">
+                        
+                        <li class="list-group-item border-0  bg-light">
+                        <h6 class="fw-bold " style="font-size: 14px;">Software</h6>
+                        </li>
+                        <li class="list-group-item border-0 bg-light"><a class="text-black" href="#">Windows-Apps</a></li>
+                        <li class="list-group-item border-0 bg-light"><a class="text-black" href="#">KI</a></li>
+                        <li class="list-group-item border-0 bg-light"><a class="text-black"
+                            href="#">OneDrive</a></li>
+                        <li class="list-group-item border-0 bg-light"><a class="text-black"
+                                href="#">Outlook</a></li>
+                        <li class="list-group-item border-0 bg-light"><a class="text-black"
+                                    href="#">Skype</a></li>
+                        <li class="list-group-item border-0 bg-light"><a class="text-black"
+                                        href="#">OneNote</a></li>
+                        <li class="list-group-item border-0 bg-light"><a class="text-black"
+                                                        href="#">OneNote</a></li>
+                        <li class="list-group-item border-0 bg-light"><a class="text-black"
+                                        href="#">Microsoft Teams</a></li>
+                    
+                    </ul>
+
+                
+                </div>                                  
+                <div class="col-2 d-flex flex-column flex-nowrap justify-content-start text-start  text-black  " style="font-size: 12px;"  >
+                    <ul class="list-group list-group-light w-100" style="font-size: 12px;">
+                        
+                        <li class="list-group-item border-0  bg-light ">
+                        <h6 class="fw-bold " style="font-size: 14px;">PCs and devices</h6>
+                        </li>
+                        <li class="list-group-item border-0 bg-light"><a class="text-black" href="#">Buy Xbox</a></li>
+                        <li class="list-group-item border-0 bg-light"><a class="text-black" href="#">Accesories</a></li>
+                        <li class="list-group-item border-0 bg-light"><a class="text-black"
+                            href="#">VR and mixed reality</a></li>
+                    </ul>
+
+                
+                </div> 
+                <div class="col-2 d-flex flex-column flex-nowrap  text-start  text-black  " style="font-size: 12px;" >
+                    <ul class="list-group list-group-light" style="font-size: 12px;">
+                        
+                        <li class="list-group-item border-0  bg-light">
+                        <h6 class="fw-bold " style="font-size: 14px;">Entertainment</h6>
+                        </li>
+                        <li class="list-group-item border-0 bg-light"><a class="text-black" href="#">Xbox Game Pass Ultimate</a></li>
+                        <li class="list-group-item border-0 bg-light"><a class="text-black" href="#">Xbox LiveGold</a></li>
+                        <li class="list-group-item border-0 bg-light"><a class="text-black"
+                            href="#">Xbox games</a></li>
+                        <li class="list-group-item border-0 bg-light"><a class="text-black"
+                                href="#">PC Games</a></li>
+                        <li class="list-group-item border-0 bg-light"><a class="text-black"
+                                    href="#">Windows games</a></li>
+                        <li class="list-group-item border-0 bg-light"><a class="text-black"
+                                        href="#">Movies & TV</a></li>
+                    
+                    </ul>
+
+                
+                </div> 
+                <div class="col-2 d-flex flex-column flex-nowrap  text-start  text-black  " style="font-size: 12px;">
+                    <ul class="list-group list-group-light">
+                        
+                        <li class="list-group-item border-0  bg-light">
+                        <h6 class="fw-bold " style="font-size: 14px;">Pursue</h6>
+                        </li>
+                        <li class="list-group-item border-0 bg-light"><a class="text-black" href="#">Microsoft cloud</a></li>
+                        <li class="list-group-item border-0 bg-light"><a class="text-black" href="#">Microsoft Security</a></li>
+                        <li class="list-group-item border-0 bg-light"><a class="text-black"
+                            href="#">Azure</a></li>
+                        <li class="list-group-item border-0 bg-light"><a class="text-black"
+                                href="#">Dynamics 365</a></li>
+                        <li class="list-group-item border-0 bg-light"><a class="text-black"
+                                    href="#">Microsoft 365 for Business</a></li>
+                        <li class="list-group-item border-0 bg-light"><a class="text-black"
+                                        href="#">Microsoft Industries</a></li>
+                    
+                    </ul>
+
+                
+                </div> 
+                <div class="col-2 d-flex flex-column flex-nowrap  text-start  text-black  " style="font-size: 12px;">
+                    <ul class="list-group list-group-light bg-light">
+                        
+                        <li class="list-group-item border-0  bg-light">
+                        <h6 class="fw-bold "style="font-size: 14px;" >Developers & IT</h6>
+                        </li>
+                        <li class="list-group-item border-0 bg-light"><a class="text-black" href="#">Developer Center</a></li>
+                        <li class="list-group-item border-0 bg-light"><a class="text-black" href="#">documentation</a></li>
+                        <li class="list-group-item border-0 bg-light"><a class="text-black"
+                            href="#">Microsoft Learn</a></li>
+                        <li class="list-group-item border-0 bg-light"><a class="text-black"
+                                href="#">Microsoft Tech Community</a></li>
+                        <li class="list-group-item border-0 bg-light"><a class="text-black"
+                                    href="#">Azure Marketplace</a></li>
+                    
+                    </ul>
+
+                
+                </div>
+                <div class="col-2 d-flex flex-column flex-nowrap  text-start  text-black  " style="font-size: 12px;">
+                    <ul class="list-group list-group-light bg-light" >
+                        
+                        <li class="list-group-item border-0 bg-light " >
+                        <h6 class="fw-bold text-start " style="font-size: 14px;">More</h6>
+                        </li>
+                        <li class="list-group-item border-0 bg-light"><a class="text-black" href="#">Microsoft Rewards</a></li>
+                        <li class="list-group-item border-0 bg-light"><a class="text-black" href="#">Download center</a></li>
+                        <li class="list-group-item border-0 bg-light"><a class="text-black"
+                            href="#">education</a></li>
+                        <li class="list-group-item border-0 bg-light"><a class="text-black"
+                                href="#">gift cards</a></li>
+                        <li class="list-group-item border-0 bg-light"><a class="text-black"
+                                    href="#">Show sitemap</a></li>
+                    
+                    </ul>
+
+                
+                </div>
+                
+               </div>
+        </div>
+    </div>
 
 
-<!-- Inner -->
+    <div class="submenu-smallveiw row w-100 h-100 bg-light " style="display: none;" >
+           <div class="col-12 bg-light mx-auto position-absolute  " style="z-index: 99999; ">
 
-<!-- Controls -->
-<button class="carousel-control-prev" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="prev">
-  <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
-  <span class="visually-hidden">Previous</span>
-</button>
-<button class="carousel-control-next" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="next">
-  <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
-  <span class="visually-hidden">Next</span>
-</button>
-</div>
-<!-- Carousel wrapper -->
+                  
+        <div class="accordion accordion-flush mt-2" id="accordionFlushExample">
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-header collapsed fs-6  border-0 bg-light m-3" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsetest1" aria-expanded="false" aria-controls="flush-collapsetest1">
+                    Microsoft 365
+                  </button>
+                </h2>
+             
+               </div>     
+
+
+
+            <div class="accordion-item">
+                <!-- line-1 -->
+                    <h2 class="accordion-header">
+                        <button class="accordion-header collapsed fs-6  border-0 bg-light m-3" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOnetest" aria-expanded="false" aria-controls="flush-collapseOnetest">
+                            teams
+                        </button>
+                    </h2>
+                
             </div>
+
+
+
+            <div class="accordion-item">
+                <!-- line-2 -->
+                      <h2 class="accordion-header">
+                        <button class="aaccordion-header collapsed fs-6  border-0 bg-light m-3" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Windows
+                        </button>
+                      </h2>
+                      <!-- sub-line-2 -->
+                
+                </div>
+<!-- end line2 -->
+<!-- start line3 -->
+<!-- line-3 -->
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+    software
+</button>
+</h2>
+<!-- sub-line3 -->
+<div id="flush-collapseThree" class="accordion-collapse collapse ps-5" data-bs-parent="#accordionFlushExample">
+
+<!-- sub1 -->
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+    Windows apps
+</button>
+</h2>
+</div>
+<!-- end sub1 -->
+<!-- sub2 -->
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+    AI
+</button>
+</h2>
+
+</div>
+<!--end- sub2 -->
+<!-- sub3 -->
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+    OneDrive
+</button>
+</h2>
+
+</div>
+<!-- end sub3 -->
+
+</div>
+</div>
+<!-- end line3 -->
+
+<!-- start line4 -->
+
+
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefour" aria-expanded="false" aria-controls="flush-collapseThree">
+    PCs and devices
+</button>
+</h2>
+<div id="flush-collapsefour" class="accordion-collapse collapse ps-5" data-bs-parent="#accordionFlushExample">
+
+<!-- sub-line1 -->
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+    Buy Xbox
+</button>
+</h2>
+
+</div>
+<!-- end-sub-line1 -->
+<!-- sub-line2 -->
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+    Accesories
+</button>
+</h2>
+
+</div>
+<!-- end-sub-line2 -->
+<!-- sub-line3 -->
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+    VR and mixed reality
+</button>
+</h2>
+
+</div>
+<!-- endsub-line3 -->
+</div>
+</div>
+
+<!-- end line4 -->
+
+<!-- line-5 -->
+
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefive" aria-expanded="false" aria-controls="flush-collapseThree">
+    Entertainment
+</button>
+</h2>
+<div id="flush-collapsefive" class="accordion-collapse collapse ps-5" data-bs-parent="#accordionFlushExample">
+
+
+<!-- sub line2 -->
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+    Xbox Game Pass Ultimate
+</button>
+</h2>
+</div>
+<!-- end-sub line2 -->
+<!-- sub line3 -->
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+    Xbox games
+</button>
+</h2>
+</div>
+<!-- end-sub line3 -->
+<!-- sub line4 -->
+<div class="accordion-item">
+<h2 class="accordion-header">
+  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsefour" aria-expanded="false" aria-controls="panelsStayOpen-collapsefour">
+    Xbox LiveGold
+  </button>
+</h2>
+</div>
+<!-- end-sub line4 -->
+<!-- sub line5 -->
+<div class="accordion-item">
+<h2 class="accordion-header">
+  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsefive" aria-expanded="false" aria-controls="panelsStayOpen-collapsefive">
+    PC Games
+  </button>
+</h2>
+</div>
+<!-- end-sub line5 -->
+
+</div>
+</div>
+
+<!-- end line5 -->
+<!-- line six -->
+
+
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsesix" aria-expanded="false" aria-controls="flush-collapseThree">
+    Pursue
+</button>
+</h2>
+<div id="flush-collapsesix" class="accordion-collapse collapse ps-5" data-bs-parent="#accordionFlushExample">
+
+<!-- sub line 1 -->
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+    Microsoft cloud
+</button>
+</h2>
+
+</div>
+
+<!-- end sub line 1 -->
+
+<!-- sub line 2 -->
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+    Microsoft Security
+</button>
+</h2>
+
+</div>
+
+<!-- end sub line 2 -->
+
+<!-- sub line 3 -->       
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+    Azure
+</button>
+</h2>
+
+</div>
+
+<!-- end sub line 3 -->
+
+</div>
+</div>
+<!-- end line six -->
+<!-- line seven -->
+
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseseven" aria-expanded="false" aria-controls="flush-collapseThree">
+    More
+</button>
+</h2>
+<div id="flush-collapseseven" class="accordion-collapse collapse ps-5" data-bs-parent="#accordionFlushExample">
+
+<!-- sub line 1 -->
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+    Microsoft Rewards
+</button>
+</h2>
+
+</div>
+<!-- end sub line 1 -->
+<!-- sub line 2 -->
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+    Download center
+</button>
+</h2>
+</div>
+<!--end sub line 2 -->
+<!-- sub line 3 -->
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+    education
+</button>
+</h2>
+</div>
+<!-- sub line 3 -->
+<!-- sub line 4 -->
+<div class="accordion-item">
+<h2 class="accordion-header">
+  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsefour" aria-expanded="false" aria-controls="panelsStayOpen-collapsefour">
+    gift cards
+  </button>
+</h2>
+<div id="panelsStayOpen-collapsefour" class="accordion-collapse collapse ps-5">
+  <div class="accordion-body">
+      <a href="#" class="d-block text-black text-decoration-none">Wellness by Oriflame</a> 
+  </div>
+</div>
+</div>
+<!-- end sub line 4 -->
+
+</div>
+</div>
+
+<!-- end line seven -->
+<!-- line 8 -->
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button class="accordion-header collapsed fs-6  border-0 bg-light m-3" type="button" data-bs-toggle="collapse"  aria-expanded="false" aria-controls="flush-collapseThree">
+    Show sitemap
+</button>
+</h2>
+</div>
+
+
+<!-- end line 8 -->
+        
+            </div>
+        </div>  
+        
+    </div>
+
+
+    <!-- make slider -->
+    <div class="slider position-relative " >
+        <div class="row m-0">
+            <div class="col-12 px-5 ">
+                <div id="carouselExampleDark" class="carousel carousel-dark slide" style="transition-delay: 1;" data-bs-ride="carousel">
+                    <!-- <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    </div> -->
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="./images/slide-1.jfif" class="d-block w-100" alt="...">
+                        <div class="row m-0 d-flex flex-row justify-content-center">
+                            <div class="col-6 ">
+                                <div class="card-img-overlay d-xxl-flex d-xl-flex d-none d-lg-flex d-md-none d-sm-none flex-column justify-content-start px-5 py-5 my-auto">
+                                    <h5 class="card-title  text-black fs-2">
+                                        Secure spring offers now
+                                    </h5>
+                                    <p class="card-text mb-4 text-black ">Don't miss out on the spring offers. Only until April 20th. </p>
+                                    <div class="d-flex flex-row flex-nowrap">
+                                        <a href="#" class="btn btn-primary bg-info fw-bold">
+                                            discover deals</a>
+                                            
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="col-12">
+                                <div class="card-img-bottom d-flex d-lg-none d-md-flex d-sm-flex flex-column justify-content-center px-5 py-5 ">
+                                    <h5 class="card-title  text-black fs-2">
+                                        Secure spring offers now
+                                    </h5>
+                                    <p class="card-text mb-4 text-black ">Don't miss out on the spring offers. Only until April 20th. </p>
+                                    <div class="d-flex flex-row flex-nowrap">
+                                        <a href="#" class="btn btn-primary bg-info fw-bold">
+                                            discover deals</a>
+                                            
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./images/slide-2.jpg" class="d-block w-100" alt="...">
+                        <div class="row m-0 d-flex flex-row justify-content-center">
+                            <div class="col-6">
+                                <div class="card-img-overlay d-xxl-flex d-xl-flex d-lg-flex d-none d-sm-none d-md-none flex-column justify-content-center px-5 py-5 ">
+                                    <h5 class="card-title  text-black fs-2">
+                                        Microsoft 365
+                                     </h5>
+                                    <p class="card-text mb-4 text-black ">Realize ideas, enjoy more online security, keep an eye on </p>
+                                    <p class="card-text mb-4 text-black ">the essentials: Microsoft 365 Apps.</p> 
+                                    </p>
+                                    <div class="d-flex flex-row flex-nowrap fw-bold">
+                                        <a href="#" class="btn btn-primary fw-bold">
+                                            For 1 user</a>
+                                            <a href="#" class=" btn  bg-image shadow-0 text-black fw-bold">
+                                                Up to 6 users
+                                            </a>
+                                    </div>
+                                  </div>
+                    
+                            </div>
+                                <div class="col-12"> 
+                                <div class="card-img-bottom d-flex d-md-flex d-sm-flex d-lg-none d-xxl-none d-xl-none flex-column justify-content-center px-5 py-5 ">
+                                    <h5 class="card-title  text-black fs-2">
+                                        Microsoft 365
+                                     </h5>
+                                    <p class="card-text mb-4 text-black ">Realize ideas, enjoy more online security, keep an eye on </p>
+                                    <p class="card-text mb-4 text-black ">the essentials: Microsoft 365 Apps.</p> 
+                                    </p>
+                                    <div class="d-flex flex-row flex-nowrap fw-bold">
+                                        <a href="#" class="btn btn-primary fw-bold">
+                                            For 1 user</a>
+                                            <a href="#" class=" btn  bg-image shadow-0 text-black fw-bold">
+                                                Up to 6 users
+                                            </a>
+                                    </div>
+                                  </div>
+                              </div>
+                           
+                        </div>
+                      </div>
+                    </div>
+                    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button> -->
+                  </div>
+
+
+
+
+
         </div>
   </div>
+    </div>
 
 
+<!-- links -->
 <div class="container-fluid mt-5">
     <div class="row">
-        <div class="col-10  offset-1 p-0 ">
+        <div class="col-12  p-0 ">
             <div class="row m-0">
-                <div class="col-2">
+                <div class="col-6 col-xxl-2 col-xl-3 col-lg-4 col-md-4 col-sm-4 ">
                     <!-- d-flex flex-column justify-content-center align-items-center align-content-center -->
                 <div class="card border-0 shadow-0  d-flex flex-column justify-content-center align-items-center" >
-                    <img class="card-img-top" src="./images/Windows-Logo.webp" alt="Card image cap" style="width: 40px; height: 40px;">
+                    <img class="card-img-top " src="./images/Windows-Logo.webp" alt="Card image cap" style="width: 40px; height: 40px;">
                     <div class="card-body "  >
                         <!-- p-0 mx-auto  justify-content-center fw-bold align-items-center -->
-                      <a link="#" class="card-text text-decoration-underline mx-auto" style="font-size:14px; " >
+                      <a link="#" class="card-text text-decoration-underline mx-auto d-block" style="font-size:14px; " >
                         Choose your Microsoft 365
                     </a>
                     </div>
                   </div>
                 </div>
-                  <div class="card col-2 d-flex flex-column justify-content-center  align-items-center border-0 shadow-0 mx-auto " >
+                  <div class="card col-6 col-xxl-2 col-xl-3 col-lg-4 col-md-4 col-sm-4 d-flex flex-column justify-content-center  align-items-center border-0 shadow-0 mx-auto " >
                     <img class="card-img-top" src="./images/surface.webp" alt="Card image cap" style="width: 40px; height: 40px;">
                     <div class="card-body">
                       <a link="#" class="card-text text-decoration-underline" style="font-size:12px;">
@@ -538,7 +898,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="card col-2 d-flex flex-column justify-content-center  align-items-center border-0 shadow-0 mx-auto" >
+                  <div class="card col-6 col-xxl-2 col-xl-3 col-lg-4 col-md-4 col-sm-4 d-flex flex-column justify-content-center  align-items-center border-0 shadow-0 mx-auto" >
                     <img class="card-img-top" src="./images/games.webp" alt="Card image cap" style="width: 40px; height: 40px;">
                     <div class="card-body">
                       <a link="#" class="card-text text-decoration-underline  align-items-center" style="font-size:12px;">
@@ -546,7 +906,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="card col-2 d-flex flex-column justify-content-center  align-items-center border-0 shadow-0 mx-auto " >
+                  <div class="card col-6 col-xxl-2 col-xl-3 col-lg-4 col-md-4 col-sm-4 d-flex flex-column justify-content-center  align-items-center border-0 shadow-0 mx-auto " >
                     <img class="card-img-top" src="./images/Windows-Logo.webp" alt="Card image cap" style="width: 40px; height: 40px;">
                     <div class="card-body">
                       <a link="#" class="card-text text-decoration-underline  align-items-center" style="font-size:12px;">
@@ -554,7 +914,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="card col-2 d-flex flex-column justify-content-center  align-items-center border-0 shadow-0 mx-auto " >
+                  <div class="card col-6 col-xxl-2 col-xl-3 col-lg-4 col-md-4 col-sm-4 d-flex flex-column justify-content-center  align-items-center border-0 shadow-0 mx-auto " >
                     <img class="card-img-top" src="./images/accessories.webp" alt="Card image cap" style="width: 40px; height: 40px;">
                     <div class="card-body">
                       <a link="#" class="card-text text-decoration-underline  align-items-center " style="font-size:12px;">
@@ -562,7 +922,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="card col-2 d-flex flex-column justify-content-center  align-items-center border-0 shadow-0 mx-auto " >
+                  <div class="card col-6 col-xxl-2 col-xl-3 col-lg-4 col-md-4 col-sm-4 d-flex flex-column justify-content-center  align-items-center border-0 shadow-0 mx-auto " >
                     <img class="card-img-top" src="./images/companies.webp" alt="Card image cap" style="width: 40px; height: 40px;">
                     <div class="card-body">
                       <a link="#" class="card-text text-decoration-underline  align-items-center " style="font-size:12px;">
@@ -576,9 +936,12 @@
     </div>
 </div>
 
+
+<!-- products -->
+
 <div class="container-fluid">
 <div class="products">
-    <div class="card-group px-5 mb-2 ">
+    <div class="card-group px-5 mb-2 d-xxl-grid d-xl-grid d-md-none d-sm-none " style="grid-template-columns: 25% 25% 25% 25%;">
                 <div class="card mx-1 shadow-0">
                     <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
                     <img src="./images/Pro-7-Plus-Angle.jfif" class="img-fluid"/>
@@ -672,16 +1035,114 @@
                     </a>
                     </div>
                 </div>
+    </div>
+        <div class="card-group px-5 mb-2 d-xxl-none d-xl-none d-md-grid  d-sm-grid" style="grid-template-columns: 50% 50%;">
+                <div class="card mx-1 shadow-0">
+                    <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                    <img src="./images/Pro-7-Plus-Angle.jfif" class="img-fluid"/>
+                    <a href="#!">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
+                    </div>
+                    
+                    <div class="card-header border-0">
+                        <!-- <h2 class="bg-warning btn btn-primary">new</h2> -->
+                    </div>
+                    <div class="card-body mt-5">
+                    <h5 class="card-title">
+                        Surface Pro 7+
+                    </h5>
+                    <p class="card-text">Now save up to 25% on the classic design of the Surface Pro 2-in-1 device.</p>
+                    <a href="#" >
+                        Buy now
+                    </a>
+                    </div>
+                </div>
+                <div class="card mx-1 shadow-0">
+                    <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                    <img src="./images/Pro-9.jfif" class="img-fluid"/>
+                    <a href="#!">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
+                    </div>
+                    <div class="card-header border-0">
+                        <h2 class="bg-warning btn shadow-0 fw-bold">new</h2>
+                    </div>
+                    <div class="card-body">
+                    <h5 class="card-title">
+                         Surface Pro 9
+                            
+                    </h5>
+                    <p class="card-text">The versatility of a tablet with the power of a laptop - all in one ultra-portable device.</p>
+                    <a href="#" >
+                        Buy now
+                    </a>
+                    </div>
+                </div>
+                <div class="card mx-1 shadow-0">
+                    <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                       
+                    <img src="./images/Laptop-5.webp" class="img-fluid"/>
+                     
+                    <a href="#!">
+
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
+                    </div>
+                    
+                    <div class="card-header border-0">
+                        <h2 class="bg-warning btn shadow-0 fw-bold">new</h2>
+                    </div>
+                    <div class="card-body mt-0">
+                    <h5 class="card-title">
+                        
+                        Surface Laptop 5
+                            
+                    </h5>
+                    <p class="card-text">Slim mobility and rapid multitasking thanks to the 12th generation Intel® Core, with Windows 11.</p>
+                    <a href="#" >
+                        Buy now
+                    </a>
+                    </div>
+                </div>
+                <div class="card mx-1 shadow-0">
+                    <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                    <img src="./images/Series-X.jfif" class="img-fluid"/>
+                    <a href="#!">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
+                    </div>
+                    
+                    <div class="card-header border-0">
+                        <!-- <h2 class="bg-warning btn btn-primary">new</h2> -->
+                    </div>
+                    <div class="card-body  mt-5">
+                    <h5 class="card-title">
+                        
+                        Xbox Series X
+                            
+                    </h5>
+                    <p class="card-text">The fastest and most powerful Xbox ever.</p>
+                    <a href="#" >
+                        
+                        Buy Xbox Series X
+        
+                    </a>
+                    </div>
+                </div>
+    </div>
 </div>
 </div>
-</div>
-<div class="container-fluid">
+
+
+<!-- xbox xxl  -->
+<div class="container-fluid d-md-none d-lg-none d-sm-none d-none d-xxl-flex d-xl-flex">
     <div class="row  m-0">
     <div class="col-12  px-5 justify-content-center align-content-center mx-1 shadow-0">
         <div class="card bg-dark text-white shadow-0">
             <img src="./images/xbox.webp" class="card-img shadow-0" alt="Stony Beach"/>
-            <div class="row m-0 d-flex flex-row justify-content-center">
-                <div class="col-6">
+            <div class="row m-0  flex-row justify-content-center d-xxl-flex d-xl-flex  ">
+                <div class="col-xxl-6 col-xl-6 ">
                     <div class="card-img-overlay d-flex flex-column justify-content-center px-5 py-5 ">
                         <h5 class="card-title  text-black fs-2">
                           Xbox Series S
@@ -697,19 +1158,69 @@
             </div>
             
           </div>
+           </div>
+        </div>
     </div>
-</div>
+
+<!-- xbox small view -->
+<div class="container-fluid d-xxl-none d-xl-none d-sm-none d-none d-md-block d-lg-block d-none  position-relative me-5" style=" margin-bottom: 100px;" >
+                <!-- <div class="row m-0 "> -->
+                        <div class="col-12  px-3 justify-content-center align-content-center mx-1 shadow-0 position-relative" style="width: 100%;">
+                            <img src="./images/xbox-small.avif" class="card-img shadow-0" alt="Stony Beach" style="width: 100%;"/>
+                        
+                        <!-- <div class=" d-block "> -->
+                            <!-- <div class="col-12 " > -->
+                                <!-- card-img-overlay -->
+                                <div class=" position-absolute d-flex flex-column justify-content-center px-5 py-5 " style="bottom: -150px;left: 5%; width: 89%; background-color: white;" >
+                                    <h5 class="card-title text-left align-content-center text-black fs-2 justify-content-left" style="align-items: center; text-align: left;">
+                                    Xbox Series S
+                                    </h5>
+                                    <p class="card-text mb-4  text-left text-black justify-content-center ">
+                                    Next-gen performance in the most compact Xbox ever
+                                    </p>
+                                    <p class="card-text  text-center text-capitalize text-white btn btn-primary col-4 fs-6 justify-content-center" style="align-items: center;">
+                                    Buy Xbox Series S</p>
+                                </div>
+                            <!-- </div> -->
+                        <!-- </div> -->
+                    </div>
+                <!-- </div> -->
 </div>
 
-<div class="container-fluid mt-5">
+<div class="container-fluid d-xxl-none d-xl-none d-lg-none d-md-none d-sm-block  d-block " >
+    <div class="row m-0 ">
+            <div class="col-12  px-3 justify-content-center align-content-center mx-1 shadow-0 position-relative" style="width: 100%;">
+                <img src="./images/xbox-small.avif" class="card-img shadow-0" alt="Stony Beach" style="width: 100%;"/>
+            
+            <div class=" d-block "> 
+                 <div class="col-12 " >
+                    <div class=" card-img-bottom d-flex flex-column justify-content-center px-5 py-5 " >
+                        <h5 class="card-title text-left align-content-center text-black fs-2 justify-content-left" style="align-items: center; text-align: left;">
+                        Xbox Series S
+                        </h5>
+                        <p class="card-text mb-4  text-left text-black justify-content-center ">
+                        Next-gen performance in the most compact Xbox ever
+                        </p>
+                        <p class="card-text  text-center text-capitalize text-white btn btn-primary col-8 fs-6 justify-content-center" style="align-items: center;">
+                        Buy Xbox Series S</p>
+                    </div>
+                </div> 
+             </div>
+        </div>
+     </div> 
+</div>
+
+
+<!-- for company -->
+<div class="row container-fluid mt-auto" >
     <div class="company col-12">
         <div class="card-header border-0 col-12 px-5 mt-5">
             <h2 class="text-black">For companies</h2>
         </div>
-        <div class="card-group px-5 mb-2">
+        <div class="card-group px-5 mb-2 d-xxl-grid d-xl-grid d-lg-none d-md-none d-sm-none " style="grid-template-columns: 25% 25% 25% 25%;">
                     <div class="card mx-1">
-                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                        <img src="./images/Surface-Pro-9-for-Business-Angled-1.jfif" class="img-fluid"/>
+                        <div class="bg-image w-100 hover-overlay text-center justify-content-center align-content-center ripple" data-mdb-ripple-color="light">
+                        <img src="./images/Surface-Pro-9-for-Business-Angled-1.jfif" class="img-fluid justify-content-center text-center w-100"/>
                         <a href="#!">
                             <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                         </a>
@@ -812,17 +1323,231 @@
                         </a>
                         </div>
                     </div>
-    </div>
+        </div>
+        <div class="card-group px-5 mb-2 d-xxl-none d-xl-none d-lg-grid d-md-grid d-sm-none" style="grid-template-columns: 50% 50%;">
+                    <div class="card mx-1 mb-3">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                        <img src="./images/Surface-Pro-9-for-Business-Angled-1.jfif" class="img-fluid"/>
+                        <a href="#!">
+                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                        </a>
+                        </div>
+                        
+                        <div class="card-header border-0 mb-0">
+                            <h2 class="bg-warning btn btn-primary text-black shadow-0 ">new</h2>
+                        </div>
+                        <div class="card-body mt-0">
+                        <h5 class="card-title fw-bold">
+                            Surface Pro 7+
+                        </h5>
+                        <p class="card-text">Now save up to 25% on the classic design of the Surface Pro 2-in-1 device.</p>
+                        <a href="#" class="fw-bold">
+                            Buy now
+                        </a>
+                        </div>
+                    </div>
+                    <div class="card mx-1 mb-3">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                        <img src="./images/Microsoft-365-For-Business-Woman.webp" class="img-fluid"/>
+                        <a href="#!">
+                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                        </a>
+                        </div>
+                        <div class="card-header border-0 ">
+                            <!-- <h2 class="bg-warning btn ">new</h2> -->
+                        </div>
+                        <div class="card-body mt-5">
+                        <h5 class="card-title fw-bold">
+                             
+                            
+                            Try Microsoft 365 for free
+                            
+                            
+                                
+                        </h5>
+                        <p class="card-text">Get Microsoft Teams, secure cloud storage, and premium apps for all devices with a free 1-month trial of Microsoft 365 Business Standard.</p>
+                        <a href="#" class="fw-bold" >
+                            
+                             Start Free Trial
+        
+                        </a>
+                        </div>
+                    </div>
+                    <div class="card mx-1">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                           
+                        <img src="./images/Brand-Hybrid-Work.webp" class="img-fluid"/>
+                         
+                        <a href="#!">
+    
+                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                        </a>
+                        </div>
+                        
+                        <div class="card-header border-0">
+                            <!-- <h2 class="bg-warning btn">new</h2> -->
+                        </div>
+                        <div class="card-body mt-5">
+                        <h5 class="card-title fw-bold">
+                           
+                            More success in a hybrid work environment
+                            
+                                
+                        </h5>
+                        <p class="card-text">Discover tools, resources and strategies for a successful transition of your employees to a new flexible working environment.</p>
+                        <a href="#" class="fw-bold" >
+                            
+                        Learn more
+        
+                        </a>
+                        </div>
+                    </div>
+                    <div class="card mx-1">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                        <img src="./images/Visual-Studio-Icon.webp" class="img-fluid"/>
+                        <a href="#!">
+                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                        </a>
+                        </div>
+                        
+                        <div class="card-header border-0">
+                            <!-- <h2 class="bg-warning btn btn-primary">new</h2> -->
+                        </div>
+                        <div class="card-body mt-5">
+                        <h5 class="card-title fw-bold">
+                            
+                            Visual Studio 2022
+                            
+                                
+                        </h5>
+                        <p class="card-text">Benefit from the most powerful IDE for .NET and C++ developers on Windows to create web, cloud, desktop and mobile applications, services and games.</p>
+                        <a href="#" class="fw-bold" >
+                            
+            
+                            Download Visual Studio 2022
+        
+        
+                        </a>
+                        </div>
+                    </div>
+        </div>
+        <div class="card-group px-5 mb-2 d-xxl-none d-xl-none d-lg-none d-md-none d-sm-grid" style="grid-template-columns: 100%;">
+            <div class="card mx-1 mb-3">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img src="./images/Surface-Pro-9-for-Business-Angled-1.jfif" class="img-fluid"/>
+                <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+                </div>
+                
+                <div class="card-header border-0 mb-0">
+                    <h2 class="bg-warning btn btn-primary text-black shadow-0 ">new</h2>
+                </div>
+                <div class="card-body mt-0">
+                <h5 class="card-title fw-bold">
+                    Surface Pro 7+
+                </h5>
+                <p class="card-text">Now save up to 25% on the classic design of the Surface Pro 2-in-1 device.</p>
+                <a href="#" class="fw-bold">
+                    Buy now
+                </a>
+                </div>
+            </div>
+            <div class="card mx-1 mb-3">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img src="./images/Microsoft-365-For-Business-Woman.webp" class="img-fluid"/>
+                <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+                </div>
+                <div class="card-header border-0 ">
+                    <!-- <h2 class="bg-warning btn ">new</h2> -->
+                </div>
+                <div class="card-body mt-5">
+                <h5 class="card-title fw-bold">
+                     
+                    
+                    Try Microsoft 365 for free
+                    
+                    
+                        
+                </h5>
+                <p class="card-text">Get Microsoft Teams, secure cloud storage, and premium apps for all devices with a free 1-month trial of Microsoft 365 Business Standard.</p>
+                <a href="#" class="fw-bold" >
+                    
+                     Start Free Trial
+
+                </a>
+                </div>
+            </div>
+            <div class="card mx-1 mb-3">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                   
+                <img src="./images/Brand-Hybrid-Work.webp" class="img-fluid"/>
+                 
+                <a href="#!">
+
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+                </div>
+                
+                <div class="card-header border-0">
+                    <!-- <h2 class="bg-warning btn">new</h2> -->
+                </div>
+                <div class="card-body mt-5">
+                <h5 class="card-title fw-bold">
+                   
+                    More success in a hybrid work environment
+                    
+                        
+                </h5>
+                <p class="card-text">Discover tools, resources and strategies for a successful transition of your employees to a new flexible working environment.</p>
+                <a href="#" class="fw-bold" >
+                    
+                Learn more
+
+                </a>
+                </div>
+            </div>
+            <div class="card mx-1 mb-3">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img src="./images/Visual-Studio-Icon.webp" class="img-fluid"/>
+                <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+                </div>
+                
+                <div class="card-header border-0">
+                    <!-- <h2 class="bg-warning btn btn-primary">new</h2> -->
+                </div>
+                <div class="card-body mt-5">
+                <h5 class="card-title fw-bold">
+                    
+                    Visual Studio 2022
+                    
+                        
+                </h5>
+                <p class="card-text">Benefit from the most powerful IDE for .NET and C++ developers on Windows to create web, cloud, desktop and mobile applications, services and games.</p>
+                <a href="#" class="fw-bold" >
+                    
+    
+                    Download Visual Studio 2022
+
+
+                </a>
+                </div>
+            </div>
+</div>
     </div>
     </div>
 
 
     <!-- Footer -->
-<footer class="text-center text-lg-start bg-light text-muted">
+  <footer class="text-center text-lg-start bg-light text-muted">
     <!-- Section: Social media -->
-    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <section class="d-flex flex-row justify-content-start p-4 border-bottom">
       <!-- Left -->
-      <div class="me-5 d-none d-lg-block px-5 text-black">
+      <div class="me-5  d-flex flex-row px-5 text-black">
         <span>
             follow microsoft
         </span>
@@ -841,16 +1566,16 @@
           <a href="#" class="me-4 text-reset">
             <i class="fab fa-linkedin"></i>
           </a>
-          <a href="#" class="me-4 text-reset">
+          <a href="#" class=" text-reset">
             <i class="fab fa-github"></i>
           </a>
       </div>
       <!-- Left -->
   
       <!-- Right -->
-      <div>
+      <!-- <div>
 
-      </div>
+      </div> -->
       <!-- Right -->
     </section>
     <section class="d-flex justify-content-center justify-content-lg-between p-4 ">
@@ -863,12 +1588,12 @@
    </section>
   
     <!-- Section: Links  -->
-    <section class="">
-      <div class="container text-center text-md-start mt-5">
-        <!-- Grid row -->
-        <div class="row mt-3">
+    <section class="links">
+      <div class="container  text-start mt-5">
+        <!-- Grid row xxl and xl d-xxl-flex  d-xl-flex d-none d-md-none d-lg-none d-sm-none-->
+        <div class="row mt-3 ">
           <!-- Grid column -->
-          <div class="col-2 mx-auto mb-4" style="font-size: 11px;">
+          <div class="col-xxl-2 col-xl-2 col-lg-4 col-md-4 col-sm-6 col-12 mx-auto mb-4" style="font-size: 11px;">
             <!-- Content -->
             <h6 class="text-uppercase fw-bold mb-4" style="font-size: 12px;">
               news
@@ -889,7 +1614,7 @@
           <!-- Grid column -->
   
           <!-- Grid column -->
-          <div class="col-2 mx-auto mb-4" style="font-size: 11px;">
+          <div class="col-xxl-2 col-xl-2 col-lg-4 col-md-4 col-sm-6 col-12 mx-auto mb-4" style="font-size: 11px;">
             <!-- Links -->
             <h6 class="text-uppercase fw-bold mb-4" style="font-size: 12px;">
                 Microsoft Store
@@ -910,7 +1635,7 @@
           <!-- Grid column -->
   
           <!-- Grid column -->
-          <div class="col-2 mx-auto mb-4" style="font-size: 11px;">
+          <div class="col-xxl-2 col-xl-2 col-lg-4 col-md-4 col-sm-6 col-12 mx-auto mb-4" style="font-size: 11px;">
             <!-- Links -->
             <h6 class="text-uppercase fw-bold mb-4" style="font-size: 12px;" >
                 education
@@ -930,7 +1655,7 @@
           </div>
           <!-- Grid column -->
                     <!-- Grid column -->
-                    <div class="col-2 mx-auto mb-4" style="font-size: 11px;">
+                    <div class="col-xxl-2 col-xl-2 col-lg-4 col-md-4 col-sm-6 col-12 mx-auto mb-4" style="font-size: 11px;">
                         <!-- Links -->
                         <h6 class="text-uppercase fw-bold mb-4" style="font-size: 12px;" >
                             Pursue
@@ -947,12 +1672,12 @@
                         <p>
                           <a href="#!" class="text-reset">Dynamics 365</a>
                         </p>
-                      </div>
+                    </div>
                       <!-- Grid column -->
   
           <!-- Grid column -->
                     <!-- Grid column -->
-                    <div class="col-2 mx-auto mb-4" style="font-size: 11px;">
+                    <div class="col-xxl-2 col-xl-2 col-lg-4 col-md-4 col-sm-6 col-12 mx-auto mb-4" style="font-size: 11px;">
                         <!-- Links -->
                         <h6 class="text-uppercase fw-bold mb-4" style="font-size: 12px;" >
                             Development & IT
@@ -975,7 +1700,7 @@
           <!-- Grid column -->
                     <!-- Grid column -->
                     <!-- Grid column -->
-                    <div class="col-2 mx-auto mb-4" style="font-size: 11px;">
+                    <div class="col-xxl-2 col-xl-2 col-lg-4 col-md-4 col-sm-6 col-12 mx-auto mb-4" style="font-size: 11px;">
                         <!-- Links -->
                         <h6 class="text-uppercase fw-bold mb-4" style="font-size: 12px;" >
                             In the company
@@ -1001,21 +1726,93 @@
 
         </div>
         <!-- Grid row -->
+
+
+
+                  
       </div>
     </section>
     <!-- Section: Links  -->
   
     <!-- Copyright -->
-    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-      © 2021 Copyright:
-      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-    </div>
+
+    <div class="Copyright text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        <div class=" mx-auto  d-flex flex-row px-5 justify-content-center  flex-wrap ">
+            <a class="text-reset mx-3 " style="font-size: 12px;" href="#">Contact Microsoft</a>
+            <a class="text-reset mx-3 " style="font-size: 12px;" href="#">cancel subscription</a>
+            <a class="text-reset mx-3 " style="font-size: 12px;" href="#">imprint</a>
+            <a class="text-reset mx-3 " style="font-size: 12px;" href="#">data protection</a>
+            <a class="text-reset mx-3 " style="font-size: 12px;" href="#">manage cookies</a>
+            <a class="text-reset mx-3 " style="font-size: 12px;" href="#">Terms of Use</a>
+            <a class="text-reset mx-3 " style="font-size: 12px;" href="#">Trademark</a>
+            <a class="text-reset mx-3 " style="font-size: 12px;" href="#">Information about our advertising</a>
+            <a class="text-reset mx-3 " style="font-size: 12px;" href="#">EU Compliance DoCs</a>
+            <a class="text-reset fw-bold  mx-3 " style="font-size: 12px;" href="#"> © Microsoft 2023</a>
+        </div>
+        </div>
+     
     <!-- Copyright -->
   </footer>
   <!-- Footer -->
-    
+
+
+
+    <script>
+        document.querySelector("div.menu_allmicrosoft").addEventListener("click", function(){
+         
+              document.querySelector("div.submenu").classList.toggle("active")
+              
+          })
+          document.querySelector("div.menu-small-bar>a>span").addEventListener("click", function(){
+          
+              document.querySelector("div.submenu-smallveiw").classList.toggle("active")
+              this.classList.toggle("fa-close")
+          })
+          
+          
+          document.querySelector("div.menu-small-bar>a.search-small>span").addEventListener("click", function(){
+            console.log("ok");
+            
+            // document.querySelector("div.menu-small-logo").classList.toggle("close")
+              
+            //   document.querySelector("div.menu-small-user").classList.toggle("close")
+              
+            //   document.querySelector("div.menu-small-bar").classList.toggle("close")
+
+              document.querySelector("div.menu-small-search").classList.toggle("active-test")
+              
+              
+          })
+          document.querySelector("a.larg-menu-search>i").addEventListener("click", function(){
+            console.log("ok");
+            
+            // document.querySelector("div.menu-small-logo").classList.toggle("close")
+              
+            //   document.querySelector("div.menu-small-user").classList.toggle("close")
+              
+            //   document.querySelector("div.menu-small-bar").classList.toggle("close")
+
+              document.querySelector("div.menu-small-search").classList.toggle("active-test")
+              
+              
+          })
+          document.querySelector("div.menu-small-search>div>div>span").addEventListener("click", function(){
+            console.log("ok");
+              
+              document.querySelector("div.menu-small-logo").classList.add("active-test")
+              
+              document.querySelector("div.menu-small-user").classList.add("active-test")
+              
+              document.querySelector("div.menu-small-bar").classList.add("active-test")
+              
+              document.querySelector("div.menu-small-search").classList.add("close")
+              
+          })
+
+    </script>
     <script src="./bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./mdb-ui-kit/js/mdb.min.js"></script>
+
    
 
 </body>

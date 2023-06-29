@@ -1,0 +1,35 @@
+.active{
+    display: block !important;
+    z-index: 99999 !important;
+}
+.close{
+    
+    display: none !important;
+}
+.active-test{
+
+    /* display: flex !important; */
+    display: inline-block !important;
+    
+    z-index: 999 !important;
+}
+ul.navbar-nav>li.nav-item>a.nav-link:hover {
+    text-decoration: underline;
+    /* background-color: yellow; */
+
+}
+div.menu_allmicrosoft>a:hover{
+    text-decoration: underline;
+}
+footer>section.links>div>div>div>p>a:hover{
+    
+    text-decoration: underline;
+}
+div.Copyright>div>a:hover  {
+    
+    text-decoration: underline;
+}
+div.submenu>div>div>div>ul>li>a:hover{
+    
+    text-decoration: underline;
+}
